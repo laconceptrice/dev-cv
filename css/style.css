@@ -1,0 +1,232 @@
+/*general*/
+
+body
+{
+  width: 100%;
+  margin: 0;
+  padding: 15px 0 0 0;
+  font-size: 100%;
+  background-image: url("../images/tile_stripes_gray.png");
+}
+.cv
+{
+  margin: 0 auto 200px auto;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+p
+{
+  margin: 0;
+}
+ul,
+li
+{
+  margin: 0;
+  padding: 0;
+}
+li
+{
+  list-style: none;
+}
+a
+{
+  color: inherit;
+}
+a:hover
+{
+  color: red;
+  transition: color 0.3s;
+}
+h1
+{
+  font-size: inherit;
+  display: inline-block;
+}
+h2
+{
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #F0F0F0;
+}
+h3
+{
+  font-size: 1rem;
+  font-weight: inherit;
+  margin: 0 0 3px 0;
+}
+
+
+/*header : contact*/
+
+header
+{
+  width: 100%;
+  background-color: white;
+}
+header:hover
+{
+  background-color: #F0F0F0;
+  color: white;
+  transition: all 0.5s;
+}
+header li
+{
+  font-size: 1.4rem;
+  display: inline-block;
+}
+header strong
+{
+  font-weight: bold;
+  color: #F0F0F0;
+  padding: 0 10px;
+}
+
+
+/*study work*/
+.content
+{
+  width: 95%;
+  margin: 15px auto;
+  padding: 0 0 25px 0;
+  background: white;
+}
+.study,
+.work,
+.sites
+{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  position: relative;
+  padding-bottom: 20px;
+  width: 30%;
+}
+.study::after,
+.work::after,
+.sites::after
+{
+  content: "}";
+  color: #F0F0F0;
+  font-weight: bold;
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  margin-right: 15px;
+}
+.content li
+{
+  margin: 0 0 25px 30px;
+}
+.content li p
+{
+  color: #B0B0B0;
+  font-size: 0.9rem;
+}
+.content li p:last-child::before
+{
+  content: "//";
+  background-color: #F0F0F0;
+  color: white;
+  font-weight: bold;
+  padding: 0 6px 0 8px;
+  margin-right: 10px;
+}
+.content span
+{
+  padding-right: 10px;
+}
+
+
+/*footer : skills*/
+
+footer
+{
+  width: 100%;
+  background-color: white;
+  padding: 3px 0 4px 0;
+}
+footer li
+{
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0 20px;
+  
+}
+footer li:nth-child(odd)
+{
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: inline-block;
+  color: #F0F0F0;
+  padding: 0 10px;
+}
+footer li:nth-child(even)
+{
+  padding: 8px 0 0 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  header,
+  footer,
+  .study,
+  .work,
+  .sites
+  {
+    width: 95%;
+    margin: 15px auto;
+    padding: 15px 15px 45px 15px;
+    background: white;
+    text-align: left;    
+  }
+  .sites
+  {
+    padding-bottom: -5px;
+  }
+  .content
+  {
+    width: 100%;
+    background: none;
+  }
+  .study::after,
+  .work::after,
+  .sites::after
+  {
+    bottom: 25px;
+  }
+  header li
+  {
+    display: block;
+    padding-left: 0;
+  }
+  header li:nth-child(2),
+  header li:nth-child(3)
+  {
+    padding-left: 15px;
+  }
+  header li:last-child
+  {
+    padding-top: 20px;
+  }
+  footer ul
+  {
+    text-align: left;
+  }
+  footer-li
+  {
+    padding-left: 25px;
+  }
+  footer li:first-child
+  {
+    display: block;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header li
+  {
+    font-size: 1rem;
+  }
+}
